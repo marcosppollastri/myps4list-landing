@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { faGamepad } from '@fortawesome/free-solid-svg-icons';
+
 
 @Component({
   selector: 'app-main',
@@ -7,9 +9,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainComponent implements OnInit {
 
+  faGamepad;
   constructor() { }
 
   ngOnInit() {
+    this.faGamepad = faGamepad;
   }
 
 }
